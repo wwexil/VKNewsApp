@@ -7,23 +7,70 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		125EA25927F2F80C00C2E59E /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125EA25827F2F80C00C2E59E /* NetworkService.swift */; };
+		125EA25B27F2F8FB00C2E59E /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125EA25A27F2F8FB00C2E59E /* Api.swift */; };
+		125EA25E27F30EB700C2E59E /* FeedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125EA25D27F30EB700C2E59E /* FeedResponse.swift */; };
+		125EA26027F313EF00C2E59E /* NetworkDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125EA25F27F313EF00C2E59E /* NetworkDataFetcher.swift */; };
+		12AFAFC127F25C6A00771502 /* VKSdkFramework.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12AFAFC027F25C6A00771502 /* VKSdkFramework.xcframework */; };
+		12AFAFC227F25C6A00771502 /* VKSdkFramework.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 12AFAFC027F25C6A00771502 /* VKSdkFramework.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		12AFAFC527F25F1E00771502 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AFAFC427F25F1E00771502 /* AuthService.swift */; };
+		12AFAFC827F2611E00771502 /* AuthViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12AFAFC727F2611E00771502 /* AuthViewController.storyboard */; };
 		12D2332D27F1E89A00294933 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D2332C27F1E89A00294933 /* AppDelegate.swift */; };
 		12D2332F27F1E89A00294933 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D2332E27F1E89A00294933 /* SceneDelegate.swift */; };
-		12D2333127F1E89A00294933 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D2333027F1E89A00294933 /* ViewController.swift */; };
-		12D2333427F1E89A00294933 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12D2333227F1E89A00294933 /* Main.storyboard */; };
+		12D2333127F1E89A00294933 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D2333027F1E89A00294933 /* AuthViewController.swift */; };
 		12D2333627F1E89B00294933 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12D2333527F1E89B00294933 /* Assets.xcassets */; };
 		12D2333927F1E89B00294933 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12D2333727F1E89B00294933 /* LaunchScreen.storyboard */; };
+		12F023E127F31BC800308FAF /* NewsFeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F023DA27F31BC800308FAF /* NewsFeedPresenter.swift */; };
+		12F023E227F31BC800308FAF /* NewsFeedWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F023DB27F31BC800308FAF /* NewsFeedWorker.swift */; };
+		12F023E327F31BC800308FAF /* NewsFeedRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F023DC27F31BC800308FAF /* NewsFeedRouter.swift */; };
+		12F023E427F31BC800308FAF /* NewsFeedModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F023DD27F31BC800308FAF /* NewsFeedModels.swift */; };
+		12F023E527F31BC800308FAF /* NewsFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F023DE27F31BC800308FAF /* NewsFeedViewController.swift */; };
+		12F023E627F31BC800308FAF /* NewsFeedInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F023DF27F31BC800308FAF /* NewsFeedInteractor.swift */; };
+		12F023E927F31F0200308FAF /* NewsFeedViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12F023E827F31F0200308FAF /* NewsFeedViewController.storyboard */; };
+		12F023EC27F33D3E00308FAF /* NewsFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F023EB27F33D3E00308FAF /* NewsFeedCell.swift */; };
+		12F023EE27F33D8900308FAF /* NewsFeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12F023ED27F33D8900308FAF /* NewsFeedCell.xib */; };
+		12F023F127F38E9100308FAF /* WebImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F023F027F38E9100308FAF /* WebImageView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		12AFAFC327F25C6A00771502 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				12AFAFC227F25C6A00771502 /* VKSdkFramework.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		125EA25827F2F80C00C2E59E /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		125EA25A27F2F8FB00C2E59E /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		125EA25D27F30EB700C2E59E /* FeedResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedResponse.swift; sourceTree = "<group>"; };
+		125EA25F27F313EF00C2E59E /* NetworkDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetcher.swift; sourceTree = "<group>"; };
+		12AFAFC027F25C6A00771502 /* VKSdkFramework.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = VKSdkFramework.xcframework; path = Carthage/Build/VKSdkFramework.xcframework; sourceTree = "<group>"; };
+		12AFAFC427F25F1E00771502 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		12AFAFC727F2611E00771502 /* AuthViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AuthViewController.storyboard; sourceTree = "<group>"; };
 		12D2332927F1E89A00294933 /* VKNewsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKNewsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12D2332C27F1E89A00294933 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12D2332E27F1E89A00294933 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		12D2333027F1E89A00294933 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		12D2333327F1E89A00294933 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		12D2333027F1E89A00294933 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		12D2333527F1E89B00294933 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12D2333827F1E89B00294933 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		12D2333A27F1E89B00294933 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12F023DA27F31BC800308FAF /* NewsFeedPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedPresenter.swift; sourceTree = "<group>"; };
+		12F023DB27F31BC800308FAF /* NewsFeedWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedWorker.swift; sourceTree = "<group>"; };
+		12F023DC27F31BC800308FAF /* NewsFeedRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedRouter.swift; sourceTree = "<group>"; };
+		12F023DD27F31BC800308FAF /* NewsFeedModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedModels.swift; sourceTree = "<group>"; };
+		12F023DE27F31BC800308FAF /* NewsFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedViewController.swift; sourceTree = "<group>"; };
+		12F023DF27F31BC800308FAF /* NewsFeedInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedInteractor.swift; sourceTree = "<group>"; };
+		12F023E827F31F0200308FAF /* NewsFeedViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewsFeedViewController.storyboard; sourceTree = "<group>"; };
+		12F023EB27F33D3E00308FAF /* NewsFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedCell.swift; sourceTree = "<group>"; };
+		12F023ED27F33D8900308FAF /* NewsFeedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsFeedCell.xib; sourceTree = "<group>"; };
+		12F023F027F38E9100308FAF /* WebImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +78,56 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12AFAFC127F25C6A00771502 /* VKSdkFramework.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		125EA25727F26C9200C2E59E /* AuthViewController */ = {
+			isa = PBXGroup;
+			children = (
+				12D2333027F1E89A00294933 /* AuthViewController.swift */,
+				12AFAFC727F2611E00771502 /* AuthViewController.storyboard */,
+			);
+			path = AuthViewController;
+			sourceTree = "<group>";
+		};
+		125EA25C27F30EA400C2E59E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				125EA25D27F30EB700C2E59E /* FeedResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		12AFAFBF27F25C6A00771502 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				12AFAFC027F25C6A00771502 /* VKSdkFramework.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		12AFAFC627F25F2F00771502 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				125EA25C27F30EA400C2E59E /* Models */,
+				12AFAFC427F25F1E00771502 /* AuthService.swift */,
+				125EA25827F2F80C00C2E59E /* NetworkService.swift */,
+				125EA25A27F2F8FB00C2E59E /* Api.swift */,
+				125EA25F27F313EF00C2E59E /* NetworkDataFetcher.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		12D2332027F1E89A00294933 = {
 			isa = PBXGroup;
 			children = (
 				12D2332B27F1E89A00294933 /* VKNewsApp */,
 				12D2332A27F1E89A00294933 /* Products */,
+				12AFAFBF27F25C6A00771502 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +144,47 @@
 			children = (
 				12D2332C27F1E89A00294933 /* AppDelegate.swift */,
 				12D2332E27F1E89A00294933 /* SceneDelegate.swift */,
-				12D2333027F1E89A00294933 /* ViewController.swift */,
-				12D2333227F1E89A00294933 /* Main.storyboard */,
+				12AFAFC627F25F2F00771502 /* Services */,
+				125EA25727F26C9200C2E59E /* AuthViewController */,
+				12F023D927F31B8600308FAF /* NewsFeed */,
 				12D2333527F1E89B00294933 /* Assets.xcassets */,
 				12D2333727F1E89B00294933 /* LaunchScreen.storyboard */,
+				12F023EF27F38E5A00308FAF /* Helpers */,
 				12D2333A27F1E89B00294933 /* Info.plist */,
 			);
 			path = VKNewsApp;
+			sourceTree = "<group>";
+		};
+		12F023D927F31B8600308FAF /* NewsFeed */ = {
+			isa = PBXGroup;
+			children = (
+				12F023EA27F33D2300308FAF /* Cell */,
+				12F023E827F31F0200308FAF /* NewsFeedViewController.storyboard */,
+				12F023DE27F31BC800308FAF /* NewsFeedViewController.swift */,
+				12F023DF27F31BC800308FAF /* NewsFeedInteractor.swift */,
+				12F023DA27F31BC800308FAF /* NewsFeedPresenter.swift */,
+				12F023DD27F31BC800308FAF /* NewsFeedModels.swift */,
+				12F023DB27F31BC800308FAF /* NewsFeedWorker.swift */,
+				12F023DC27F31BC800308FAF /* NewsFeedRouter.swift */,
+			);
+			path = NewsFeed;
+			sourceTree = "<group>";
+		};
+		12F023EA27F33D2300308FAF /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				12F023EB27F33D3E00308FAF /* NewsFeedCell.swift */,
+				12F023ED27F33D8900308FAF /* NewsFeedCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		12F023EF27F38E5A00308FAF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				12F023F027F38E9100308FAF /* WebImageView.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,6 +197,7 @@
 				12D2332527F1E89A00294933 /* Sources */,
 				12D2332627F1E89A00294933 /* Frameworks */,
 				12D2332727F1E89A00294933 /* Resources */,
+				12AFAFC327F25C6A00771502 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,9 +246,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12F023E927F31F0200308FAF /* NewsFeedViewController.storyboard in Resources */,
 				12D2333927F1E89B00294933 /* LaunchScreen.storyboard in Resources */,
+				12F023EE27F33D8900308FAF /* NewsFeedCell.xib in Resources */,
+				12AFAFC827F2611E00771502 /* AuthViewController.storyboard in Resources */,
 				12D2333627F1E89B00294933 /* Assets.xcassets in Resources */,
-				12D2333427F1E89A00294933 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +261,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12D2333127F1E89A00294933 /* ViewController.swift in Sources */,
+				125EA25E27F30EB700C2E59E /* FeedResponse.swift in Sources */,
+				12F023E127F31BC800308FAF /* NewsFeedPresenter.swift in Sources */,
+				12D2333127F1E89A00294933 /* AuthViewController.swift in Sources */,
 				12D2332D27F1E89A00294933 /* AppDelegate.swift in Sources */,
+				12F023E627F31BC800308FAF /* NewsFeedInteractor.swift in Sources */,
 				12D2332F27F1E89A00294933 /* SceneDelegate.swift in Sources */,
+				125EA25927F2F80C00C2E59E /* NetworkService.swift in Sources */,
+				125EA26027F313EF00C2E59E /* NetworkDataFetcher.swift in Sources */,
+				12F023E227F31BC800308FAF /* NewsFeedWorker.swift in Sources */,
+				12F023F127F38E9100308FAF /* WebImageView.swift in Sources */,
+				12F023E327F31BC800308FAF /* NewsFeedRouter.swift in Sources */,
+				125EA25B27F2F8FB00C2E59E /* Api.swift in Sources */,
+				12AFAFC527F25F1E00771502 /* AuthService.swift in Sources */,
+				12F023E427F31BC800308FAF /* NewsFeedModels.swift in Sources */,
+				12F023EC27F33D3E00308FAF /* NewsFeedCell.swift in Sources */,
+				12F023E527F31BC800308FAF /* NewsFeedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		12D2333227F1E89A00294933 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				12D2333327F1E89A00294933 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		12D2333727F1E89B00294933 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -294,7 +422,6 @@
 				INFOPLIST_FILE = VKNewsApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -322,7 +449,6 @@
 				INFOPLIST_FILE = VKNewsApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
